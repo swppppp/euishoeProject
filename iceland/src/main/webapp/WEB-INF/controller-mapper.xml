@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+	<!-- home 페이지 -->
+	<bean type="controller" name="/home" class="com.euishoe.home.controller.HomeController" />
+	
+	<!-- board 페이지 -->
+	<bean type="controller" name="/board" class="com.euishoe.board.controller.BoardController" />
+	
+	<!-- contact 페이지 -->
+	<bean type="controller" name="/contact" class="com.euishoe.contact.controller.ContactController" />
+	
+	<!-- about 페이지 -->
+	<bean type="controller" name="/about" class="com.euishoe.about.controller.AboutController" />
+	
+	<!-- 상품관련 -->
+	
+	<!-- 상품리스트 -->
+	<bean type="controller" name="/product" class="com.euishoe.product.controller.ProductController" />
+	<!-- 상품 상세 관리 -->
+	<bean type="controller" name="/product/details" class="com.euishoe.product.controller.ProductDetailsController" />
+	
+	<!-- 고객관련 -->
+	<bean type="controller" name="/customer/login" class="com.euishoe.customer.controller.CustomerLoginController" />
+	<bean type="controller" name="/customer/mypage" class="com.euishoe.customer.controller.CustomerMyPageController" />
+	<bean type="controller" name="/customer/regist" class="com.euishoe.customer.controller.CustomerRegistController" />
+	<bean type="controller" name="/customer/findme" class="com.euishoe.customer.controller.CustomerFindmeController" />
+</beans>
